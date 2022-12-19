@@ -24,7 +24,7 @@ abstract class Pessoa
     public function __destruct()
     {
         self::$countNumeroPessoas--;
-
+        
     }
 
 
