@@ -43,35 +43,23 @@ class DbExecute
         return join(",", $prepareBind);
     }
 
+    // @ PREPARA QUERY PRA INSERIR UM VALOR NA TABELA
     public function queryInsert():string
     {
         // faz toda a query para ser inserida
         $query = "
-        INSERT INTO ".self::$table."(".self::$keyPrepare.", create) VALUES(".self::$bindPrepare.", NOW());
+        INSERT INTO ".self::$table."(".self::$keyPrepare.", criacao) VALUES(".self::$bindPrepare.", NOW());
         ";
         return $query;
     }    
 
     // @ PERSONALIZAR PARA FICAR DINAMICO
     function queryCreateTable():string
-    {   
-        // $query = "
-        // CREATE TABLE Persons (
-        //     PersonID int PRIMARY KEY AUTO_INCREMENT,
-        //     LastName varchar(255),
-        //     FirstName varchar(255),
-        //     Address varchar(255),
-        //     City varchar(255),
-        //     create DATETIME
-        // );        
-        // ";
+    {           
+        $prepare = join(",", self::$schema);        
 
         $query = "
-        CREATE TABLE " . self::$table . " (
-            ID int PRIMARY KEY AUTO_INCREMENT,
-            " . self::$keyPrepare . "
-            create DATETIME
-        );        
+            CREATE TABLE IF NOT EXISTS ".self::$table." ( ". $prepare .",criacao DATETIME);       
         ";
         return $query;
     }

@@ -12,7 +12,7 @@ class ConnexaoBdPlus extends DbExecute
     // @connexao
     protected  $conn;
 
-    function __construct(string $table, array $schema)
+    function __construct(string $table, array $schema=[])
     {
         parent::__construct($table, $schema);
         $this->conn = $this->connxao();
@@ -35,31 +35,33 @@ class ConnexaoBdPlus extends DbExecute
         $executarQuery = $this->queryCreateTable();
         $this->conn->prepare($executarQuery)->execute();
 
-        print_r($executarQuery);
-        print_r('Sucesso!!!');
     }
+
     // @ RETORNA UM ARRAY COM TODAS AS PROPRIEDADES
-    function selectAll():array
-    {
+    function selectAll()
+    {   
+
         $executarQuery = $this->querySelectAll();
         $result = $this->conn->prepare($executarQuery);
         $result->execute();
-        return $result->fetch(PDO::FETCH_ASSOC);
+
+        while($row_usuarios = $result->fetch(PDO::FETCH_ASSOC)){
+            var_dump($row_usuarios);
+        };
+
     }    
 }
 
 
-$tenso = array(
-    "nome"=> "thiago teles 222",
-    "sobrenome"=> "qualquer",
-    "titulo"=> "meudeus",
-);
+
+// $tenso = array(
+//     "nome"=> "thiago teles 222",
+//     "sobrenome"=> "qualquer",
+//     "titulo"=> "meudeus",
+// );
 
 
-
-$casa = new ConnexaoBdPlus("aluno", $tenso);
-$casa->insertInto();
-
-
+// $casa = new ConnexaoBdPlus("faturas", $queryCreate);
+// $casa->insertInto();
 
 

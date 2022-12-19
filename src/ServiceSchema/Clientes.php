@@ -18,12 +18,8 @@ class Cliente extends ConnexaoBdPlus
         // $query= "
         //     CREATE TABLE IF NOT EXISTS aluno(id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(200),  sobrenome VARCHAR(200),  titulo VARCHAR(200));
         // ";
-
     }
 }
-
-
-
 
 $tenso = Cliente::criarTabela();
 

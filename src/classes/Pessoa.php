@@ -23,8 +23,7 @@ abstract class Pessoa
     // @ pouca ultilidade, usado apenas em alguns eventos expecificos
     public function __destruct()
     {
-        self::$countNumeroPessoas--;
-        
+        self::$countNumeroPessoas--;        
     }
 
 
@@ -72,8 +71,6 @@ abstract class Pessoa
 
     public abstract function __toString():string;
         
-
-
 }
 
 

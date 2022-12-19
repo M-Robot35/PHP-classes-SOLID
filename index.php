@@ -23,14 +23,3 @@ print_r($funcionario);
 
 echo "</pre>";
 
-
-
-
-
-
-
-
-
-
-
-
