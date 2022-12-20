@@ -1,0 +1,78 @@
+
+@media only screen and (max-width: 622px) {
+    .header-total{
+        display: flex;
+        width: 100%;
+    }
+    
+    .conteiner-menu {
+        display: flex;
+        width: 100%;        
+    }
+    
+    .conteiner-menu nav{
+        display: flex;
+        width: 100%;
+    }
+    
+    .conteiner-menu nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .conteiner-menu nav ul div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px;
+    }
+    
+    .conteiner-menu nav ul div li > a{
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgb(225, 222, 222);
+        text-decoration: none;
+           
+    }
+  }
+
+  @media only screen and (max-width: 413px) {
+    
+    .header-total{
+        display: flex;
+        width: 100%;
+        border: 1px dashed black;
+    }    
+    
+
+    .conteiner-menu nav ul div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 5px;
+    }    
+    
+    #cad-user {
+        display: none;
+    }
+
+    #cad-func {
+        display: none;
+    }
+
+    #aviso-logado {
+        font-size: 1rem;        
+    }
+    #content-total-user {
+        padding: 1rem;
+    }
+  }
+  
+
+
+
+

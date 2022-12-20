@@ -1,0 +1,70 @@
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cadastro div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;      
+}
+
+.cadastro label{
+    font-weight: 900;
+    margin-right: 10px;
+    
+}
+.cadastro input {
+    border: 1px solid black;
+    border-radius: 5px;   
+    padding: 5px;  
+}
+
+/* SHADOW */
+.cadastro , .cadastro input {
+    box-shadow: 0 2px 5px black;
+}
+
+.cadastro input[type="submit"]{
+    width: 100%;
+    background-color: rgb(23, 40, 232);
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

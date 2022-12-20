@@ -1,0 +1,27 @@
+@import url("./cad_pessoas.css");
+@import url("./headerStyle.css");
+@import url("./mediaWidth.css");
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    overflow: auto;
+    max-width: 1080px;
+}
+
+

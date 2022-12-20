@@ -1,41 +1,32 @@
 <?php
+session_start();
 
-use cliente as GlobalCliente;
+$nome = $_POST["name"];
+$idade = $_POST["idade"];
+$data = $_POST["data"];
+$renda = $_POST["renda"];
 
-// require_once "../Bd_connect/connect.php";
+$rua = $_POST["rua"];
+$numero = $_POST["numero"];
+$lagradouro = $_POST["lagradouro"];
+$uf = $_POST["uf"];
 
-
-class Cliente extends ConnexaoBdPlus
+if (!empty($nome) and !empty($idade) and !empty($data) and !empty($renda) and !empty($rua) and !empty($numero) and !empty($lagradouro) and !empty($uf))
 {   
+    $_SESSION['msg']= "logado";
+    $_SESSION['nome']= $nome;
+    $_SESSION['idade']= $idade;
+    $_SESSION['rua']= $rua;
+    $_SESSION['log']= "<h3 style='background:greem;border:1px solid black'>USUARIO LOGADO: ".$_SESSION['nome']."</h3>";
 
-    function __construct()
-    {
-        
-    }
+    header("Location: ../pages/loginUsuario.php");
+    echo "<h1>TODOS CAMPOS SELECIONADOS</h1>";
+    die("<h1>ON</h1>");
+}else{
 
-    static function criarTabela()
-    {
-        // $query= "
-        //     CREATE TABLE IF NOT EXISTS aluno(id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(200),  sobrenome VARCHAR(200),  titulo VARCHAR(200));
-        // ";
-    }
+    $_SESSION['msg']= "<h3 style='background:red;border:1px solid black'>PREENCHA TODOS OS CAMPOS</h3>";
+
+    header("Location: ../pages/cad_usuario.php");
+    die("<h1>OFF</h1>");
 }
-
-$tenso = Cliente::criarTabela();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

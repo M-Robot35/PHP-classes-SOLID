@@ -1,0 +1,42 @@
+.header-total{
+    display: flex;
+    width: 100%;
+}
+
+.conteiner-menu {
+    display: flex;
+    width: 100%;  
+    border-bottom: 1px dashed black;      
+}
+
+.conteiner-menu nav{
+    display: flex;
+    width: 100%;
+}
+
+.conteiner-menu nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.conteiner-menu nav ul div{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.conteiner-menu nav ul div li > a{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(225, 222, 222);
+    text-decoration: none;
+       
+}
+
+.conteiner-menu nav ul div li > a:hover{
+    background-color: blueviolet;
+    color: white;
+    
+}

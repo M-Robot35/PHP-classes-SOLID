@@ -6,9 +6,6 @@ $pass='';
 $db_name='pessoa';
 $port='3306';
 
-$nome = "Daniel";
-$password = "Parangarito1";
-
 $conn = new PDO("mysql:root=$root;dbname=". $db_name, $user , $pass);
 
 // $query = "
