@@ -12,7 +12,8 @@
 }
 
 body{
-    /* background-color: orange; */
+    border: 1px solid black;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

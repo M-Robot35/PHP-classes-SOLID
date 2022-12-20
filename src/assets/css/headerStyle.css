@@ -1,6 +1,8 @@
 .header-total{
     display: flex;
     width: 100%;
+    position: absolute;
+    top: 0;  
 }
 
 .conteiner-menu {

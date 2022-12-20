@@ -3,21 +3,6 @@
 ?>
 
 <h1>Cadastro de Funcionario </h1>
-<!--  NOME IDADE ENDEREÇO //  RUA NUMERO LAGAROURO UF -->
-<!-- 
-NOME
-IDADE
-CARGO
-SALARIO
-
-RUA
-NUMERO
-LAGRADOURO
-UF
-
-
- -->
-
 
 <!-- FUNCIONARIO -->
 

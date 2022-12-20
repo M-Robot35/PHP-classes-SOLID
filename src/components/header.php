@@ -11,20 +11,8 @@
     <link rel="stylesheet" href="../assets/css/index_style.css">
     <title>Pagina Inicial | Thiago Teles</title>
 </head>
-<style>
-    body{
-        border: 1px solid black;
-        position: relative;
-    }
-
-    .header-total {
-        position: absolute;
-        top: 0;       
-    }
-</style>
     
-<body>
-    
+<body>    
 
 <section class="header-total">
     
