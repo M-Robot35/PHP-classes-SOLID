@@ -65,6 +65,7 @@
     </div>
 </form>
 
+<!-- FOOTER  -->
 <?php
     require_once "../components/footer.php"
 ?>

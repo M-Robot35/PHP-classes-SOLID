@@ -28,8 +28,8 @@
 <hr>
 <?php echo $_SESSION['log'];?>
 
-<!-- REDIRECT LOGOUT -->
 <?php 
+    // <!-- REDIRECT LOGOUT -->
     echo " <a href='../pages/logoutUser.php'>Sair</a>";
 ?>
 

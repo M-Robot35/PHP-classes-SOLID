@@ -13,6 +13,8 @@ $uf = $_POST["uf"];
 
 if (!empty($nome) and !empty($idade) and !empty($data) and !empty($renda) and !empty($rua) and !empty($numero) and !empty($lagradouro) and !empty($uf))
 {   
+    require_once "./midwareCliente.php";
+
     $_SESSION['msg']= "logado";
     $_SESSION['nome']= $nome;
     $_SESSION['idade']= $idade;

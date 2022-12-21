@@ -35,8 +35,6 @@ class cliente extends Pessoa
 
     // VALIDATIONS
 
-
-
     // METHODO ABSTRATO DESCONTO CLIENTES
     public function set_desconto():void
     {
@@ -53,7 +51,5 @@ class cliente extends Pessoa
                 "Data Nascimento: " . $this->get_dataNascimento() . 
                 "Salario: " . $this->renda . "</p>";
     }
-    
-
 }
 

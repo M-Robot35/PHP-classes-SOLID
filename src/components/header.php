@@ -33,14 +33,14 @@
 
                 <div>
                     <li><?php 
-                        if (isset($_SESSION['msg']))
-                        {
-                            echo "Olá " . $_SESSION['nome'];
-                            echo '<li><a href="../pages/logoutUser.php">Logout</a></li>';
-                        }else{
-                            echo "Faça Log in";
-                        }
-                    ?>
+                            if (isset($_SESSION['msg']))
+                            {
+                                echo "Olá " . $_SESSION['nome'];
+                                echo '<li><a href="../pages/logoutUser.php">Logout</a></li>';
+                            }else{
+                                echo "Faça Log in";
+                            }
+                        ?>
                     </li>
                 </div>
             </ul>

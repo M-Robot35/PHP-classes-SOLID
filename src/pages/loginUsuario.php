@@ -1,10 +1,7 @@
 <?php
     require_once "../components/header.php"; 
-
-    if (!isset($_SESSION['msg'])){
-        header("Location: ../pages/logoutUser.php");
-        die("Área Apenas para Usuarios Vips");
-    }
+    require_once "../components/checkSession.php";
+    
 ?>
 
 <h1 id="aviso-logado" style="background-color: green;color:white;padding:10px;">ÁREA PARA ÚSUARIOS LOGADOS</h1>
